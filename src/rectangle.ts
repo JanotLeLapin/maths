@@ -13,7 +13,8 @@ export default class Rectangle {
      * @param {IRectangleOptions} options The rectangle properties. Will calculate missing properties.
      */
     constructor(options: IRectangleOptions) {
-        if (!options.height && !options.width) throw "Not enough information.";
+        this.h = options.height ? options.height : 0;
+        this.w = options.width ? options.width : 0;
         if (options.height && options.width) {
             this.h = options.height;
             this.w = options.width;
@@ -42,42 +43,42 @@ export default class Rectangle {
     }
 
     /**
-     * The height of the rectangle
+     * The height of the rectangle in cm
      */
     get height() {
         return this.h
     }
 
     /**
-     * The height of the rectangle
+     * The height of the rectangle in cm
      */
     set height(height: number) {
         this.h = height;
     }
 
     /**
-     * The width of the rectangle
+     * The width of the rectangle in cm
      */
     get width() {
         return this.w;
     }
 
     /**
-     * The width of the rectangle
+     * The width of the rectangle in cm
      */
     set width(width: number) {
         this.w = width;
     }
 
     /**
-     * Returns the perimeter of the rectangle
+     * Returns the perimeter of the rectangle in cm
      */
     get perimeter() {
         return 2 * (this.h + this.w);
     }
 
     /**
-     * Returns the perimeter of the rectangle
+     * Returns the area of the rectangle in cm²
      */
     get area() {
         return this.h * this.w;
