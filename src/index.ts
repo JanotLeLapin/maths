@@ -1,11 +1,11 @@
 import Rectangle from './rectangle';
 
 const r = new Rectangle({
-    area: 12,
-    height: 4,
+    perimeter: 10,
+    width: 3,
 });
 
-console.log(r.width);
+console.log(r.height);
 
 import { exo1 } from './algorithmes';
 
