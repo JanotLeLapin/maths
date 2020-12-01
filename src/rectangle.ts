@@ -17,7 +17,7 @@ export default class Rectangle {
     private w: number = 0;
 
     /**
-     * Creates a neat rectangle.
+     * @description Creates a neat rectangle.
      * @param {IRectangleOptions} options The rectangle properties. Will calculate missing properties.
      */
     constructor(options: IRectangleOptions) {
@@ -52,7 +52,7 @@ export default class Rectangle {
     }
 
     /**
-     * The height of the rectangle in cm
+     * @description The height of the rectangle in cm
      */
     get height() {
         return this.h
@@ -63,7 +63,7 @@ export default class Rectangle {
     }
 
     /**
-     * The width of the rectangle in cm
+     * @description The width of the rectangle in cm
      */
     get width() {
         return this.w;
@@ -74,14 +74,14 @@ export default class Rectangle {
     }
 
     /**
-     * Returns the perimeter of the rectangle in cm
+     * @description Returns the perimeter of the rectangle in cm
      */
     get perimeter() {
         return 2 * (this.h + this.w);
     }
 
     /**
-     * Returns the area of the rectangle in cm²
+     * @description Returns the area of the rectangle in cm²
      */
     get area() {
         return this.h * this.w;

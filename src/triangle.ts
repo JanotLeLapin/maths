@@ -3,7 +3,7 @@ export default class Triangle {
     private h:    number;
 
     /**
-     * Creates a neat triangle.
+     * @description Creates a neat triangle.
      * @param {number} b The base of the triangle in cm.
      * @param {number} h The height of the triangle in cm.
      */
@@ -13,7 +13,7 @@ export default class Triangle {
     }
 
     /**
-     * The base of the triangle in cm.
+     * @description The base of the triangle in cm.
      */
     get base() {
         return this.b;
@@ -24,7 +24,7 @@ export default class Triangle {
     }
 
     /**
-     * The height of the triangle in cm.
+     * @description The height of the triangle in cm.
      */
     get height() {
         return this.h;
@@ -35,7 +35,7 @@ export default class Triangle {
     }
 
     /**
-     * Returns the area of the rectangle in cm².
+     * @description Returns the area of the rectangle in cm².
      */
     get area() {
         return 1 / 2 * this.b * this.h;
