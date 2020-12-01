@@ -27,3 +27,18 @@ const w = dot(u, v);
 
 console.log(w); // [3, 8, 15]
 ```
+
+### Transpose a matrix
+```ts
+const x = [
+    [1, 2],
+    [3, 4],
+    [5, 6],
+];
+
+console.log(transpose(x));
+// [
+//     [1, 3, 5],
+//     [2, 4, 6],
+// ];
+```
