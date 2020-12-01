@@ -25,7 +25,7 @@ const u = [1, 2, 3];
 const v = [3, 4, 5];
 const w = dot(u, v);
 
-console.log(w); // [3, 8, 15]
+console.log(w); //26
 ```
 
 ### Transpose a matrix

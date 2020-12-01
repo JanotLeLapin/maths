@@ -1,9 +1,3 @@
-import { transpose } from './util';
+import { dot } from './util';
 
-const x = [
-    [1, 2],
-    [3, 4],
-    [5, 6],
-];
-
-console.log(transpose(x));
+console.log(dot([1, 2, 3], [3, 4, 5]));

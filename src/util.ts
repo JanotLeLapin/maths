@@ -15,10 +15,11 @@ class RangeError extends Error {
  */
 export const dot = (a: number[], b: number[]) => {
     if (a.length != b.length) throw new RangeError('Invalid vector length: ' + a.length + ' != ' + b.length + '.');
+    let result = 0;
     for (let i = 0; i < a.length; i++) {
-        a[i] *= b[i];
+        result += a[i] *= b[i];
     }
-    return a;
+    return result;
 };
 
 /**
