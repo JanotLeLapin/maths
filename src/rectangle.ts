@@ -10,6 +10,7 @@ export default class Rectangle {
     private w: number = 0;
 
     /**
+     * Creates a neat rectangle.
      * @param {IRectangleOptions} options The rectangle properties. Will calculate missing properties.
      */
     constructor(options: IRectangleOptions) {
@@ -49,9 +50,6 @@ export default class Rectangle {
         return this.h
     }
 
-    /**
-     * The height of the rectangle in cm
-     */
     set height(height: number) {
         this.h = height;
     }
@@ -63,9 +61,6 @@ export default class Rectangle {
         return this.w;
     }
 
-    /**
-     * The width of the rectangle in cm
-     */
     set width(width: number) {
         this.w = width;
     }
