@@ -4,3 +4,8 @@ export const exo1 = (z: number) => {
     z = y - 2.3;
     return [x, y, z];
 };
+
+export const f = (x: number) => {
+    return 5 * x - x ** 2;
+};
+
