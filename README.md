@@ -1,8 +1,8 @@
 # maths
-I'm lazy so I made math things so I don't have to think during class.
+Some math things I'm currently learning in class.
 
 ### Rectangle calculator
-```js
+```ts
 const r = new Rectangle({
     height: 7,
     width: 9,
@@ -11,10 +11,19 @@ const r = new Rectangle({
 console.log(r.area) // 63
 ```
 The rectangle class can figure out its properties based on other parameters
-```js
+```ts
 const r = new Rectangle({
     perimeter: 10,
     width: 3,
 });
 console.log(r.height); // 2
+```
+
+### Dot product calculator
+```ts
+const u = [1, 2, 3];
+const v = [3, 4, 5];
+const w = dot(u, v);
+
+console.log(w); // [3, 8, 15]
 ```
