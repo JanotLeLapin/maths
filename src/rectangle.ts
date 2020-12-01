@@ -1,3 +1,10 @@
+class IncompatibleData extends Error {
+    constructor (message: string) {
+        super(message);
+        this.name = 'IncompatibleData';
+    }
+}
+
 interface IRectangleOptions {
     perimeter?: number;
     area?:      number;
@@ -40,7 +47,8 @@ export default class Rectangle {
                 this.w = options.width;
             }
         }
-        if ((options.perimeter && 2 * (this.h + this.w) !== options.perimeter) || (options.area && this.h * this.w !== options.area)) throw "Incoherent data.";
+        if (options.perimeter && 2 * (this.h + this.w) !== options.perimeter) throw new IncompatibleData('2 * (height: ' + this.h + ' + width: ' + this.w + ') != perimeter: ' + options.perimeter);
+        if (options.area && this.h * this.w !== options.area) throw new IncompatibleData('height: ' + this.h + ' * width: ' + this.w + ' != area: ' + options.area);
     }
 
     /**
