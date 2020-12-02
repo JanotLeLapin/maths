@@ -23,6 +23,22 @@ export const dot = (a: number[], b: number[]) => {
 };
 
 /**
+ * Returns the sum of two vectors.
+ * @example ```js
+ * const u = [1, 2, 3];
+ * const v = [2, 3, 4];
+ * const w = add(u, v);
+ * ```
+ */
+export const add = (a: number[], b: number[]) => {
+    if (a.length !== b.length) throw new RangeError(a.length + ' !== ' + b.length + '.');
+    for (let i = 0; i < a.length; i++) {
+        a[i] += b[i];
+    }
+    return a;
+};
+
+/**
  * @description Returns the transposed matrix of a matrix.
  * @param {number[][]} a The matrix
  */
