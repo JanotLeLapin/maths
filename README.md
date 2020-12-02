@@ -8,7 +8,7 @@ const r = new Rectangle({
     width: 9,
 });
 
-console.log(r.area) // 63
+console.log(r.area); // 63
 ```
 The rectangle class can figure out its properties based on other parameters
 ```ts
@@ -19,16 +19,29 @@ const r = new Rectangle({
 console.log(r.height); // 2
 ```
 
-### Dot product calculator
+## Vectors
+
+### Dot product
 ```ts
 const u = [1, 2, 3];
 const v = [3, 4, 5];
 const w = dot(u, v);
 
-console.log(w); //26
+console.log(w); // 26
 ```
 
-### Transpose a matrix
+### Addition
+```ts
+const u = [1, 2, 3];
+const v = [3, 4, 5];
+const w = add(u, v);
+
+console.log(w); // [5, 7, 9]
+```
+
+## Matrices
+
+### Transposing
 ```ts
 const x = [
     [1, 2],
