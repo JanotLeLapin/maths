@@ -14,3 +14,8 @@ console.log('\nEX 3\n');
 for (let i = 0; i <= 5; i++) {
     console.log(h(i));
 }
+import { add, dot, transpose } from './util';
+
+console.log(transpose([[1, 2, 3], [4, 5, 6]]));
+console.log(dot([1, 2, 3], [4, 5, 6]));
+console.log(add([1, 2, 3], [4, 5, 6]));
