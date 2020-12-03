@@ -1,10 +1,5 @@
-export const exo1 = (z: number) => {
-    let x = 3;
-    let y = z * x;
-    z = y - 2.3;
-    return [x, y, z];
-};
-
 export const f = (x: number) => {
     return 5 * x - x ** 2;
 };
+
+export const h = (t: number) => t ** 2 * - 1 + 9 / 2 * t + 3;
