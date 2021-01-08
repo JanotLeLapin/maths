@@ -1,6 +1,16 @@
 # maths
 Some math things I'm currently learning in class.
 
+## How to use
+Make sure you have installed Node, Yarn and Git.
+```
+git clone https://github.com/JanotLeLapin/maths.git
+cd maths
+yarn install
+tsc
+yarn start
+```
+
 ### Rectangle calculator
 ```ts
 import Rectangle from './rectangle';
