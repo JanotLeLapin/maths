@@ -67,7 +67,7 @@ console.log(w); // [2, 4, 6]
 
 ## Matrices
 ```ts
-import {} from './matrices';
+import { transpose } from './matrices';
 ```
 
 ### Transposing
