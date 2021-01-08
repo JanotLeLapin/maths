@@ -30,3 +30,33 @@ export const add = (a: number[], b: number[]) => {
     }
     return a;
 };
+
+/**
+ * Returns the difference of two vectors.
+ * @example ```js
+ * const u = [1, 2, 3];
+ * const v = [2, 3, 4];
+ * const w = sub(u, v);
+ * ```
+ */
+export const sub = (a: number[], b: number[]) => {
+    if (a.length !== b.length) throw new RangeError(a.length + ' !== ' + b.length + '.');
+    for (let i = 0; i < a.length; i++) {
+        a[i] -= b[i];
+    }
+    return a;
+};
+
+/**
+ * Returns the product of a vector and a scalar.
+ * @example ```js
+ * const k = 2;
+ * const u = [1, 2, 3];
+ * const w = mul(k, u);
+ */
+export const mul = (a: number, b: number[]) => {
+    for (let i = 0; i < b.length; i++) {
+        b[i] *= a;
+    }
+    return b;
+};
