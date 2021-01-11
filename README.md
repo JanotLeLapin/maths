@@ -37,32 +37,7 @@ console.log(r.height); // 2
 
 ## Vectors
 
-### The Vector class
-
-Performing multiple operations with vectors in the same line tend to be confusing when you're using only functions, that's why I created the Vector class.
-```ts
-// Using the Vector class
-import Vector from './vector';
-
-const u = new Vector(1, 2, 3);
-const v = new Vector(2, 3, 4);
-const w = new Vector(3, 4, 5);
-const k = 2;
-
-console.log(w.add(u).sub(v).mul(k).dot(w)); // 76
-
-// Using raw arrays
-import { dot, add, sub, mul } from './vectors';
-
-const u = [1, 2, 3];
-const v = [2, 3, 4];
-const w = [3, 4, 5];
-const k = 2;
-
-console.log(dot(mul(k, sub(add(w, u), v)), w)); // 76
-```
-As you can see, using the Vector class makes the operation chain easier to write, edit and read.
-
+## Using raw arrays as vectors
 ```ts
 import { dot, add, sub, mul } from './vectors';
 ```
@@ -102,6 +77,32 @@ const w = mul(k, u);
 
 console.log(w); // [2, 4, 6]
 ```
+
+## Using the Vector class
+
+Performing multiple operations with vectors in the same line tend to be confusing when you're using only functions, that's why I created the Vector class.
+```ts
+// Using the Vector class
+import Vector from './vector';
+
+const u = new Vector(1, 2, 3);
+const v = new Vector(2, 3, 4);
+const w = new Vector(3, 4, 5);
+const k = 2;
+
+console.log(w.add(u).sub(v).mul(k).dot(w)); // 76
+
+// Using raw arrays
+import { dot, add, sub, mul } from './vectors';
+
+const u = [1, 2, 3];
+const v = [2, 3, 4];
+const w = [3, 4, 5];
+const k = 2;
+
+console.log(dot(mul(k, sub(add(w, u), v)), w)); // 76
+```
+As you can see, using the Vector class makes the operation chain easier to write, edit and read.
 
 ## Matrices
 ```ts
