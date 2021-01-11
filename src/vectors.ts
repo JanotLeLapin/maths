@@ -53,6 +53,7 @@ export const sub = (a: number[], b: number[]) => {
  * const k = 2;
  * const u = [1, 2, 3];
  * const w = mul(k, u);
+ * ```
  */
 export const mul = (a: number, b: number[]) => {
     for (let i = 0; i < b.length; i++) {
