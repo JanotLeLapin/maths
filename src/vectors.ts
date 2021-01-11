@@ -16,7 +16,7 @@ export const dot = (a: number[], b: number[]) => {
 };
 
 /**
- * Returns the sum of two vectors.
+ * @description Returns the sum of two vectors.
  * @example ```js
  * const u = [1, 2, 3];
  * const v = [2, 3, 4];
@@ -32,7 +32,7 @@ export const add = (a: number[], b: number[]) => {
 };
 
 /**
- * Returns the difference of two vectors.
+ * @description Returns the difference of two vectors.
  * @example ```js
  * const u = [1, 2, 3];
  * const v = [2, 3, 4];
@@ -48,7 +48,7 @@ export const sub = (a: number[], b: number[]) => {
 };
 
 /**
- * Returns the product of a vector and a scalar.
+ * @description Returns the product of a vector and a scalar.
  * @example ```js
  * const k = 2;
  * const u = [1, 2, 3];
