@@ -25,10 +25,11 @@ export const dot = (a: number[], b: number[]) => {
  */
 export const add = (a: number[], b: number[]) => {
     if (a.length !== b.length) throw new RangeError(a.length + ' !== ' + b.length + '.');
+    let result = [...a];
     for (let i = 0; i < a.length; i++) {
-        a[i] += b[i];
+        result[i] += b[i];
     }
-    return a;
+    return result;
 };
 
 /**
@@ -41,10 +42,11 @@ export const add = (a: number[], b: number[]) => {
  */
 export const sub = (a: number[], b: number[]) => {
     if (a.length !== b.length) throw new RangeError(a.length + ' !== ' + b.length + '.');
+    let result = [...a];
     for (let i = 0; i < a.length; i++) {
-        a[i] -= b[i];
+        result[i] -= b[i];
     }
-    return a;
+    return result;
 };
 
 /**
@@ -56,8 +58,9 @@ export const sub = (a: number[], b: number[]) => {
  * ```
  */
 export const mul = (a: number, b: number[]) => {
+    let result = [...b];
     for (let i = 0; i < b.length; i++) {
-        b[i] *= a;
+        result[i] *= a;
     }
-    return b;
+    return result;
 };
