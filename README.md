@@ -1,6 +1,8 @@
 # maths
 Some math things I'm currently learning in class.
 
+![Node.js CI](https://github.com/JanotLeLapin/maths/workflows/Node.js%20CI/badge.svg?branch=main&event=push)
+
 ## How to use
 Make sure you have installed Node, Yarn and Git.
 ```
