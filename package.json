@@ -9,6 +9,7 @@
     "scripts": {
         "start": "node dist",
         "debug": "nodemon dist",
+        "clean": "rm -r ./dist",
         "test": "jest",
         "ci": "yarn install --frozen-lockfile"
     },
