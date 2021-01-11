@@ -1,7 +1,10 @@
 # maths
 Some math things I'm currently learning in class.
 
-![Node.js CI](https://github.com/JanotLeLapin/maths/workflows/Node.js%20CI/badge.svg?branch=main&event=push)
+![Node.js CI](https://github.com/JanotLeLapin/maths/workflows/Node.js%20CI/badge.svg?event=push)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/JanotLeLapin/maths)
+![GitHub repo size](https://img.shields.io/github/repo-size/JanotLeLapin/maths)
+![GitHub followers](https://img.shields.io/github/followers/JanotLeLapin?style=social)
 
 ## How to use
 Make sure you have installed Node, Yarn and Git.
