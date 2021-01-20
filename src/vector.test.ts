@@ -8,4 +8,5 @@ test('Vector calculation chain', () => {
 
     expect(u.add(v).sub(w).coordinates).toStrictEqual([0, 1, 2]);
     expect(v.mul(k).add(u).dot(w)).toBe(102);
+    expect(v.middle().coordinates).toStrictEqual([1, 1.5, 2]);
 });

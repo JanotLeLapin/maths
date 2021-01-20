@@ -41,4 +41,9 @@ export default class Vector {
      * @param {Vector} v The vector to multiply this vector with
      */
     dot = (v: Vector) => d(this.c, v.c);
+
+    /**
+     * @description Returns the middle of this vector.
+     */
+    middle = () => this.mul(0.5);
 };
