@@ -123,7 +123,7 @@ export default class Vector {
      * ```
      */
     static join(...v: Vector[]) {
-        let result = v[v.length - 1].c;
+        let result = [...v[v.length - 1].c];
         for (let i = v.length - 2; i >= 0; i--) {
             result = s(result, v[i].c);
         }
