@@ -106,6 +106,22 @@ console.log(dot(mul(k, sub(add(w, u), v)), w)); // 76
 ```
 As you can see, using the Vector class makes the operation chain easier to write, edit and read.
 
+### Middle
+```ts
+const u = new Vector(1, 2, 3);
+
+console.log(u.middle().coordinates); // [0.5, 1, 1.5]
+```
+
+### Joining (or whatever it's called)
+```ts
+const a = new Vector(1, 2, 3);
+const b = new Vector(2, 3, 4);
+const c = new Vector(3, 4, 5);
+
+console.log(Vector.join(a, b, c).coordinates) // [0, -1, -2]
+```
+
 ## Matrices
 ```ts
 import { transpose } from './matrices';
