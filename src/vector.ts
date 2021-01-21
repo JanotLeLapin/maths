@@ -45,5 +45,15 @@ export default class Vector {
     /**
      * @description Returns the middle of this vector.
      */
-    middle = () => this.mul(0.5);
+    /**
+     * @description Joins two vectors.
+     * @param {Vector[]} v The vector to join this vector with.
+     */
+    static join(...v: Vector[]) {
+        let result = v[v.length - 1].c;
+        for (let i = v.length - 2; i >= 0; i--) {
+            result = s(result, v[i].c);
+        }
+        return new Vector(...result);
+    };
 };
