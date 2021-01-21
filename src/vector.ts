@@ -90,6 +90,28 @@ export default class Vector {
     };
 
     /**
+     * @description Checks wether this vector is colinear with another.
+     * @param {Vector} v The vector to check the colinearity with.
+     * @example ```ts
+     * const u = new Vector(1, 2, 4);
+     * const v = new Vector(2, 4, 8);
+     * const w = new Vector(1, 4, 3);
+     *
+     * console.log(u.isColinear(v)); // true
+     * console.log(u.isColinear(w)); // false
+     * ```
+     */
+    isColinear(v: Vector) {
+        if (v.c.length !== this.c.length)
+            throw new RangeError('Invalid vector size: ' + v.c.length + ' != ' + this.c.length + '.');
+        if (this.c.length === 1) return true;
+        for (let i = 0; i < this.c.length - 1; i++) {
+            if (v.c[i] * this.c[i + 1] !== v.c[i + 1] * this.c[i]) return false;
+        }
+        return true;
+    };
+
+    /**
      * @description Joins an array of vectors.
      * @param {Vector[]} v The vectors to join together.
      * @example ```ts
