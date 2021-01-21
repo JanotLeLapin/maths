@@ -79,17 +79,6 @@ export default class Vector {
     };
 
     /**
-     * @description Returns the middle of this vector.
-     * @example ```ts
-     * const u = new Vector(1, 2, 3);
-     *
-     * console.log(u.middle().coordinates); // [0.5, 1, 1.5]
-     */
-    middle() {
-        return this.mul(0.5);
-    };
-
-    /**
      * @description Checks wether this vector is colinear with another.
      * @param {Vector} v The vector to check the colinearity with.
      * @example ```ts
