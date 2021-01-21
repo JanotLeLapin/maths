@@ -58,8 +58,8 @@ export default class Vector {
     };
 
     /**
-     * @description Joins two vectors.
-     * @param {Vector[]} v The vector to join this vector with.
+     * @description Joins an array of vectors.
+     * @param {Vector[]} v The vectors to join together.
      */
     static join(...v: Vector[]) {
         let result = v[v.length - 1].c;
