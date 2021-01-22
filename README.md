@@ -1,9 +1,14 @@
-# maths
-Some math things I'm currently learning in class.
-
-![Node.js CI](https://github.com/JanotLeLapin/maths/workflows/Node.js%20CI/badge.svg?event=push)
-![GitHub repo size](https://img.shields.io/github/repo-size/JanotLeLapin/maths)
-![GitHub followers](https://img.shields.io/github/followers/JanotLeLapin?style=social)
+<div align="center">
+    <br/>
+    <p>
+        <h1>Maths</h1>
+        <h3>Some math things I'm currently learning in class.</h3>
+    </p>
+    <p>
+        <a href="https://github.com/JanotLeLapin/maths/actions"><img src="https://github.com/JanotLeLapin/maths/workflows/Node.js%20CI/badge.svg?event=push" alt="Actions" /></a>
+        <a href="https://github.com/JanotLeLapin"><img href="https://img.shields.io/github/followers/JanotLeLapin" /></a>
+    </p>
+</div>
 
 ## How to use
 Make sure you have installed Node, Yarn and Git.
