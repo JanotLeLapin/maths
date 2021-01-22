@@ -115,6 +115,16 @@ const c = new Vector(3, 4, 5);
 console.log(Vector.join(a, b, c).coordinates) // [0, -1, -2]
 ```
 
+### Colinearity
+```ts
+const u = new Vector(1, 2, 4);
+const v = new Vector(2, 4, 8);
+const w = new Vector(3, 2, 7);
+
+console.log(u.isColinear(v)); // true
+console.log(u.isColinear(w)); // false
+```
+
 ## Matrices
 ```ts
 import { transpose } from './matrices';
