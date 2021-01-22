@@ -6,7 +6,7 @@
     </p>
     <p>
         <a href="https://github.com/JanotLeLapin/maths/actions"><img src="https://github.com/JanotLeLapin/maths/workflows/Node.js%20CI/badge.svg?event=push" alt="Actions" /></a>
-        <a href="https://github.com/JanotLeLapin"><img href="https://img.shields.io/github/followers/JanotLeLapin" /></a>
+        <a href="https://github.com/JanotLeLapin"><img src="https://img.shields.io/github/followers/JanotLeLapin" alt="GitHub followers"></a>
     </p>
 </div>
 
